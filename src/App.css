@@ -1,38 +1,398 @@
-.App {
-  text-align: center;
+*{
+  
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
+  width: 100%;
+  height: 100px;
   display: flex;
-  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(22, 21, 21, 0.2);
+  position: fixed;
+  z-index: 100;
+}
+
+
+.home{
+  width: 100%;
+  height: auto;
+  /* position: fixed; */
+}
+.main-content {
+  padding-top: 75px;
+  min-height: 100vh;
+  
+}
+  
+  
+.conatiner{
+  gap: 150px;
+}
+
+.logo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo h4{
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(101, 247, 211);
+  margin-left: 50px;
+}
+.logo .care{
+  color: rgba(22, 21, 21, 0.2);
+}
+
+
+/* search bar */
+.headerSearch{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+ 
+ background: #fff;
+}
+
+.headerSearc .search{
+  display: flex;
+  align-items: center;
+}
+.headerSearch .input{
+  width: 300px;
+  height: 35px;
+  border-color: rgba(0, 0, 0, 0.2);
+ border-radius: 10px;
+  
+}
+
+.sidebar{
+  width: 210px;
+  height: 593px;
+  /* background:rgb(183, 246, 230) ; */
+  background:#E2EAF4;
+  display: flex;
+
+ 
+}
+
+.sidebar .conatiner h6 {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 10px;
+  
+}
+
+
+.sidebar .conatiner h3{
+  font-size: 18px;
+  font-weight: 600;
+  color:  rgba(0, 0, 0, 0.8);
+  margin-left:10px ;
+}
+
+.sidebar .conatiner .listIcon{
+  font-size: 15px;
+}
+.sidebar .conatiner .items{
+  margin-right: 30px;
+}
+.sidebar .conatiner .items .listItem{
+  list-style: none;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.sidebar .conatiner .setting{
+  margin-top: 100px;
+  margin-left: 20px;
+  display: flex;justify-items: center;
+}
+
+.sidebar .conatiner .setting h4{
+  font-weight: 600;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 1px;
+}
+
+.sidebar .conatiner .setting  .seticon{
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+
+.mainComponent{
+  /* display: flex; */
+  width: 700px;
+  margin-top: 40px;
+  /* height: 300px; */
+}
+
+.mainComponent .dashboard{
+  display: flex;
+  /* flex-direction: column; */
+  width: 600px;
+  /* background: #E2EAF4; */
+}
+
+.mainComponent .dashboard h3{
+  margin-left: 25px;
+  font-weight: 400;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+ .mainComponent .dashboard .fade-button{
+  justify-content: flex-end;
+  margin-left: 350px;
+  
+ }
+
+ .mainComponent .body{
+  display: flex;
+  width: 100%;
+  height: 400px;
+  padding: 25px;
+  margin-top: -10px;
+  /* margin-top: 10px; */
+ }
+
+ 
+
+ .mainComponent  .body .img{
+  margin-left: 2px;
+  border-radius: 15px;
+  margin-top: 15px;
+ }
+ .body .content{
+  display: flex;
+  width: 200px;
+  
+  margin-left:70px ;
+  /* justify-content: center; */
+   flex-direction: column;
+ }
+ .body .content .boxc{
+  background: rgb(162, 244, 224);
+  margin-left: 30px;
+  height: 110px;
+  width: 140px;
+  margin-top: 10px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.20) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.12) 0px 12px 13px, rgba(0, 0, 0, 0.05) 0px -3px 5px;
+  text-align: center;
+  
+  
+ }
+
+ .boxc{
+  margin-bottom: 2px;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .boxc h5{
+  margin-top: 20px;
   color: white;
+  
+ }
+
+ .boxc p{
+  font-size: 10px;
+  
+ }
+ .boxc .line {
+  color: #E2EAF4;
+  margin-bottom: 20px;
+  margin-left: 0px;
+ }
+
+
+ .mainComponent .ActivityContent {
+  display: flex;
+  flex-direction: row;
+  /* background: #E2EAF4; */
+  width: 100%;
+  height: 150px;
+ }
+
+  .mainComponent .ActivityContent .Activity{
+  display: flex;
+  border: 1px solid black;
+  background: #fff;
+  height: 120px;
+  width: 600px;
+  margin-left: 10px;
+  margin-top: 20px;
+  border-radius: 15px;
+ }
+ .Activity h5{
+  font-size: 20px;
+  font-weight: 550;
+  color: rgba(0, 0, 0, 0.55);
+  margin: 10px;
+ }
+
+  .mainComponentpart2 .calen{
+    width: 100%;
+    height: 597px;
+    margin-top: 25px;
+   
+    background: #E2EAF4;
+  }
+
+   .mainComponentpart2 .upcomeingschedule{
+    
+    width: 100%;
+    height: 210px;
+    margin-top: 10px;
+    /* background: black; */
+   }
+
+   .upcomeingschedule  .schedule{
+    flex-direction: row;
+   }
+   .schedule h5{
+     margin-left: 10px;
+     margin-top: 10px;
+     font-size: 19px;
+     font-weight: 550;
+     color:rgba(0, 0, 0, 0.20);
+   }
+
+   .scheudlebox{
+    flex-direction: row;
+    /* height: 100px; */
+   }
+
+   .scheudlebox .box{
+    display: flex;
+    height: 70px;
+    width: 160px;
+    background: rgb(162, 244, 224);
+    border-radius: 20px;
+   }
+
+   .scheudlebox .box h6{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 400;
+    color: #fff;
+   }
+
+    .scheudlebox .date{
+      font-weight: 400;
+      margin-left: 10px;
+    }
+   .scheudlebox .box p{
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+   }
+
+   .part2-1 .b{
+      margin-top: 10px;
+      display: flex;
+   }
+
+   .part2-1 .b p{
+    margin-left: 10px;
+    margin-top: 15px;
+   }
+
+   .part2-1 .bo{
+      margin-top: 10px;
+      display: flex;
+   }
+
+   .part2-1 .bo p{
+    margin-left: 10px;
+    margin-top: 15px;
+   }
+
+   .calenContent{
+    /* display: flex; */
+    text-align: center;
+    
+    background: #C9DBF6;
+    height: 100px;
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 20px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.12) 0px 12px 13px, rgba(0, 0, 0, 0.05) 0px -3px 5px;
+    flex-direction: row;
+   }
+
+    .calenContent.cc{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+    }
+   .calenContent.cc h5{
+    margin-top: 15px;
+    /* justify-content: center;
+    text-align: center; */
+    margin-left: 200px;
+    font-size: 12px;
+   }
+
+   .hearderRightContent{
+    gap: 20px;
+    align-items: center;
+    margin-left: 350px;
+   }
+
+   .hearderRightContent .profile .fade-button {
+    font-size:25px ;
+    color: rgb(101, 247, 211); 
+    border-radius: 50px;
+    height: 25px;
+    width: 12px;
+   }
+
+   /* .hearderRightContent .profile .fade-button .fade-menu{
+    /* margin-top: 20px; */
+   */
+
+    .hearderRightContent .Add{
+     font-size:28px ;
+     color: rgb(101, 247, 211); 
+    }
+
+    /* new search box */
+
+    .search-container {
+  position: relative;
+  width: 400px;
 }
 
-.App-link {
-  color: #61dafb;
+.search-input {
+  width: 100%;
+  padding: 10px 40px 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  pointer-events: none;
+  font-size: 18px;
 }
+
