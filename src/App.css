@@ -2,7 +2,7 @@
   
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  box-sizing: 0;
+  box-sizing: border-box;
 }
 
 .header{
@@ -20,7 +20,7 @@
 .home{
   width: 100%;
   height: auto;
-  /* position: fixed; */
+
 }
 .main-content {
   padding-top: 75px;
@@ -51,7 +51,7 @@
 }
 
 
-/* search bar */
+
 .headerSearch{
   display: flex;
   align-items: center;
@@ -75,7 +75,7 @@
 .sidebar{
   width: 210px;
   height: 593px;
-  /* background:rgb(183, 246, 230) ; */
+
   background:#E2EAF4;
   display: flex;
 
@@ -130,17 +130,17 @@
 
 
 .mainComponent{
-  /* display: flex; */
+  
   width: 700px;
   margin-top: 40px;
-  /* height: 300px; */
+  
 }
 
 .mainComponent .dashboard{
   display: flex;
-  /* flex-direction: column; */
+ 
   width: 600px;
-  /* background: #E2EAF4; */
+ 
 }
 
 .mainComponent .dashboard h3{
@@ -162,7 +162,7 @@
   height: 400px;
   padding: 25px;
   margin-top: -10px;
-  /* margin-top: 10px; */
+  
  }
 
  
@@ -177,7 +177,7 @@
   width: 200px;
   
   margin-left:70px ;
-  /* justify-content: center; */
+
    flex-direction: column;
  }
  .body .content .boxc{
@@ -220,7 +220,7 @@
  .mainComponent .ActivityContent {
   display: flex;
   flex-direction: row;
-  /* background: #E2EAF4; */
+  
   width: 100%;
   height: 150px;
  }
@@ -255,7 +255,7 @@
     width: 100%;
     height: 210px;
     margin-top: 10px;
-    /* background: black; */
+    
    }
 
    .upcomeingschedule  .schedule{
@@ -271,7 +271,7 @@
 
    .scheudlebox{
     flex-direction: row;
-    /* height: 100px; */
+  
    }
 
    .scheudlebox .box{
@@ -320,7 +320,7 @@
    }
 
    .calenContent{
-    /* display: flex; */
+   
     text-align: center;
     
     background: #C9DBF6;
@@ -341,8 +341,7 @@
     }
    .calenContent.cc h5{
     margin-top: 15px;
-    /* justify-content: center;
-    text-align: center; */
+  
     margin-left: 200px;
     font-size: 12px;
    }
@@ -361,16 +360,14 @@
     width: 12px;
    }
 
-   /* .hearderRightContent .profile .fade-button .fade-menu{
-    /* margin-top: 20px; */
-   */
+   
 
     .hearderRightContent .adds{
      font-size:28px ;
      color: rgb(101, 247, 211); 
     }
 
-    /* new search box */
+ 
 
     .search-container {
   position: relative;

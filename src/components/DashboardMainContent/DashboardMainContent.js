@@ -3,7 +3,8 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Fade from '@mui/material/Fade';
-import body from "C:\\Users\\Asus\\OneDrive\\Desktop\\healthcare\\src\\assets\\images\\body.jpg";
+
+import body from '../../assets/images/body.jpg';
 import Boxs from './Boxs/Boxs';
 import { BsLungsFill } from "react-icons/bs";
 import { BiSolidBone } from "react-icons/bi";
