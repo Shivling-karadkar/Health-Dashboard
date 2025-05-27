@@ -2,7 +2,12 @@ import React from 'react';
 
 import Logo from './Logo/Logo';
 import SearchBar from './SearchBar/SearchBar';
-import Profile from 'C:\\Users\\Asus\\OneDrive\\Desktop\\healthcare\\src\\components\\Header\\Profile\\Profile.js';
+
+import Profile from './Profile/Profile';
+
+
+
+
 
 export default function Header() {
   return (
